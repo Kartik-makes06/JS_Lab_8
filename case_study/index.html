@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Admission Registration</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="form-container">
+
+        <h1>Gym Admission Form</h1>
+        <p class="subtitle">Enter your information</p>
+
+        <form id="gymForm">
+
+            <!-- Name -->
+            <div class="form-row">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your name">
+            </div>
+
+            <!-- Sex -->
+            <div class="form-row">
+                <label>Sex</label>
+
+                <div class="options">
+                    <label>
+                        <input type="radio" name="sex" value="Male">
+                        Male
+                    </label>
+
+                    <label>
+                        <input type="radio" name="sex" value="Female">
+                        Female
+                    </label>
+                </div>
+            </div>
+
+            <!-- Eye Color -->
+            <div class="form-row">
+                <label for="eyeColor">Eye Color</label>
+
+                <select id="eyeColor">
+                    <option value="">Select Eye Color</option>
+                    <option value="Brown">Brown</option>
+                    <option value="Black">Black</option>
+                    <option value="Blue">Blue</option>
+                    <option value="Green">Green</option>
+                    <option value="Hazel">Hazel</option>
+                </select>
+            </div>
+
+            <!-- Checkboxes -->
+            <div class="form-row">
+                <label>Check all that apply</label>
+
+                <div class="options">
+                    <label>
+                        <input type="checkbox" name="fitness" value="Over 6 feet tall">
+                        Over 6 feet tall
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="fitness" value="Over 200 pounds">
+                        Over 200 pounds
+                    </label>
+                </div>
+            </div>
+
+            <!-- Athletic Ability -->
+            <div class="form-row">
+                <label for="ability">Describe your athletic ability</label>
+
+                <textarea id="ability" rows="6" placeholder="Describe your athletic ability..."></textarea>
+            </div>
+
+            <!-- Submit -->
+            <button type="submit">Enter My Information</button>
+
+        </form>
+
+        <div id="result"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
